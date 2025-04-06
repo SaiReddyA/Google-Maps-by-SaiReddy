@@ -51,7 +51,7 @@ An interactive map application built using **Angular 18** and **Leaflet.js**, wh
 
 ```bash
 # Clone the repo
-git clone https://github.com/your-username/sai-reddy-maps.git
+git clone https://github.com/SaiReddyA/Google-Maps-by-SaiReddy.git
 cd sai-reddy-maps
 
 # Install dependencies
