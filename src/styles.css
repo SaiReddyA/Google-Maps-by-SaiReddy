@@ -1,0 +1,40 @@
+@import "leaflet/dist/leaflet.css";
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+app-root {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* Sticky header */
+nav.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Sticky footer at the bottom */
+footer {
+  position: sticky;
+  bottom: 0;
+  z-index: 1000;
+}
+
+/* Ensure main grows and takes remaining space */
+main.flex-grow-1 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+

@@ -1,0 +1,43 @@
+<div class="container">
+    <h3 class="text-center mb-1">Search Map</h3>
+  
+    <!-- Toggle Buttons -->
+    <div class="d-flex justify-content-center mb-2">
+      <div class="btn-group" role="group" aria-label="Search Mode">
+        <button class="btn btn-outline-primary" [class.active]="searchMode === 'latlng'" (click)="searchMode = 'latlng'">
+          Search by Lat/Lng
+        </button>
+        <button class="btn btn-outline-primary" [class.active]="searchMode === 'location'" (click)="searchMode = 'location'">
+          Search by Location Name
+        </button>
+      </div>
+    </div>
+  
+    <!-- Lat/Lng Search -->
+    <div *ngIf="searchMode === 'latlng'" class="row justify-content-center mb-1">
+        <div class="col-md-4 mb-2">
+          <input type="number" class="form-control" #latInput placeholder="Latitude" [(ngModel)]="lat" />
+        </div>
+        <div class="col-md-4 mb-2">
+            <input type="number" class="form-control" #lngInput placeholder="Longitude" [(ngModel)]="lng" />
+        </div>
+        <div class="col-md-2">
+            <button class="btn btn-success w-100" (click)="initMap(latInput.value, lngInput.value)">Search</button>
+        </div>
+    </div>
+      
+  
+    <!-- Location Search -->
+    <div *ngIf="searchMode === 'location'" class="row justify-content-center mb-1">
+      <div class="col-md-8 mb-2">
+        <input type="text" class="form-control" #lang placeholder="Enter location name" [(ngModel)]="location" />
+      </div>
+      <div class="col-md-2">
+        <button class="btn btn-success w-100" (click)="addMarkerByLocationName(lang.value)">Search</button>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Map container -->
+  <div id="map" style="height: 60vh; width: 100%;"></div>
+  
