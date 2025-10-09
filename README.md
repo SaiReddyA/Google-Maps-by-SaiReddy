@@ -8,7 +8,7 @@ An interactive map application built using **Angular 18** and **Leaflet.js**, wh
   - Location name (via OpenStreetMap geocoding)
 - Add multiple **custom markers** using Material Icons.
 - Clean UI with Bootstrap layout, sticky header/footer, and responsive design.
-
+- 
 ---
 
 ### 🚀 Features
