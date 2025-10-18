@@ -2,8 +2,6 @@
 
 An interactive map application built using **Angular 18** and **Leaflet.js**, which allows users to:
 
-
-
 - Get their **current location** on the map.
 - **Search and plot** locations using:
   - Latitude and Longitude
