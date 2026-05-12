@@ -45,7 +45,7 @@ An interactive map application built using **Angular 18** and **Leaflet.js**, wh
 ![alt text](image.png)
 
 ---
-Testing eogrdfgdfbfbdfdfb
+Testing eogr
 ### 📂 How to Run
 
 ```bash
